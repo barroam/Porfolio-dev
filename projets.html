@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - Portfolio Développeur Fullstack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #FFD700;
+            --secondary-color: #000000;
+            --text-color: #FFFFFF;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+        .navbar {
+            background-color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+        }
+        .navbar-brand, .nav-link {
+            color: var(--text-color) !important;
+        }
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+        .btn-primary:hover {
+            background-color: #e6c200;
+            border-color: #e6c200;
+            color: var(--secondary-color);
+        }
+        .section-title {
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--primary-color);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projets.html">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Compétences.html">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5 mt-5">
+        <h1 class="section-title text-center mb-5">Mes Projets</h1>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <img src="/api/placeholder/600/400" class="card-img-top" alt="Projet AgriTech">
+                    <div class="card-body">
+                        <h3 class="card-title">Projet AgriTech</h3>
+                        <p class="card-text">Application web pour optimiser les cultures avec IoT et IA.</p>
+                        <p><strong>Technologies :</strong> Laravel, Vue.js, Node.js, MongoDB</p>
+                        <a href="#" class="btn btn-primary me-2">Démo</a>
+                        <a href="#" class="btn btn-outline-light">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <img src="/api/placeholder/600/400" class="card-img-top" alt="E-commerce Mobile">
+                    <div class="card-body">
+                        <h3 class="card-title"> Mobile</h3>
+                        <p class="card-text">App mobile avec paiement intégré et gestion des stocks en temps réel.</p>
+                        <p><strong>Technologies :</strong> React Native, Node.js, Express, MySQL</p>
+                        <a href="#" class="btn btn-primary me-2">Démo</a>
+                        <a href="#" class="btn btn-outline-light">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <img src="/api/placeholder/600/400" class="card-img-top" alt="Plateforme de Formation en Ligne">
+                    <div class="card-body">
+                        <h3 class="card-title">Plateforme de Formation en Ligne</h3>
+                        <p class="card-text">Système de gestion de cours en ligne avec fonctionnalités de vidéoconférence.</p>
+                        <p><strong>Technologies :</strong> Angular, Django, PostgreSQL, WebRTC</p>
+                        <a href="#" class="btn btn-primary me-2">Démo</a>
+                        <a href="#" class="btn btn-outline-light">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <img src="/api/placeholder/600/400" class="card-img-top" alt="Dashboard IoT">
+                    <div class="card-body">
+                        <h3 class="card-title">Dashboard </h3>
+                        <p class="card-text">Interface de visualisation en temps réel pour des capteurs IoT industriels.</p>
+                        <p><strong>Technologies :</strong> React, Node.js, </p>
+                        <a href="#" class="btn btn-primary me-2">Démo</a>
+                        <a href="#" class="btn btn-outline-light">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class=" text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
